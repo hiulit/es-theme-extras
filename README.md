@@ -2,7 +2,7 @@
 
 At this moment, [Pixel](https://github.com/ehettervik/es-theme-pixel) is the only theme that works with this script because it's the only one that has [icons](https://github.com/ehettervik/es-theme-pixel/tree/master/retropie/icons), splashscreens ([16:9](https://github.com/ehettervik/es-theme-pixel/blob/master/splash16-9.png) and [4:3](https://github.com/ehettervik/es-theme-pixel/blob/master/splash4-3.png)) and [launching images](https://github.com/ehettervik/es-runcommand-splash).
 
-As you can see, Pixel theme has both icons and splashscreens in the same repository and launching images has its own repository.
+Pixel theme has both icons and splashscreens in the same repository and launching images has its own repository.
 
 This script is created under these premises:
 
@@ -17,6 +17,8 @@ I propose two versions:
 
 * Self-contained: All extras in the same repository
 * Diferent repositories for each extra (icons, splashscreens and launching images)
+
+When the decision is made, I'll make the necessary changes according to the version agreed upon.
 
 ## Self-contained (same repository) version
 
