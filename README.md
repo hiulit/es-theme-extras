@@ -125,14 +125,17 @@ See https://github.com/RetroPie/RetroPie-Setup/tree/master/scriptmodules/supplem
 #### Images
 
 * `THEME`-`splashscreen`-`16-9.png`
+
+e.g `pixel-splashscreen-16-9.png`
+
 * `THEME`-`splashscreen`-`4-3.png`
+
+e.g `pixel-splashscreen-4-3.png`
 
 #### Videos
 
 * `THEME`-`splashscreen`-`video.mp4`
 
-e.g `pixel-splashscreen-16-9.png`
-e.g `pixel-splashscreen-4-3.png`
 e.g `pixel-splashscreen-video.mp4`
 
 ### Formatting
