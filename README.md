@@ -15,8 +15,8 @@ I think that could be standarized so that every theme could take advantage of th
 
 I propose two versions:
 
-* Self-contained: All extras in the same repository
-* Diferent repositories for each extra (icons, splashscreens and launching images)
+* [Self-contained](#self-contained-same-repository-version): All extras in the same repository
+* [Diferent repositories](#diferent-repositories-version) for each extra (icons, splashscreens and launching images)
 
 When the decision is made, I'll make the necessary changes according to the version agreed upon.
 
@@ -141,8 +141,6 @@ e.g `pixel-splashscreen-video.mp4`
 * Spaces must be hyphens
 
 ## Launching images
-
-### Repository URL
 
 ### Filetype
 
