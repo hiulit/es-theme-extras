@@ -37,7 +37,7 @@ function install_theme() {
             if [[ $success -eq 0 ]]; then
                 echo "${theme^} installed successfully!"
             else
-                dialog --backtitle "$backtitle" --msgbox "Something went wrong :_(\nCouldn't resolve https://github.com/$repo/es-theme-$theme.git" 10 40 2>&1 >/dev/tty            
+                dialog --backtitle "$backtitle" --msgbox "Something went wrong :_(\nCouldn't resolve https://github.com/$repo/es-theme-$theme.git" 10 40 2>&1 >/dev/tty
             fi
         fi
     fi
@@ -125,7 +125,7 @@ function uninstall_icons() {
         done
         backup_icons=($icons_path/$backup_default_icons_dir/*)
         for backup_icon in "${backup_icons[@]}"; do
-            if [[ -f "$backup_icon" ]]; then 
+            if [[ -f "$backup_icon" ]]; then
                 cp $backup_icon $icons_path
                 echo "$icons_path/$(basename "$backup_icon") copied successfully!"
             fi
@@ -151,32 +151,30 @@ function choose_splashscreen() {
     local options=()
     local i=1
     local splashscreens=($(find $themes_path/$theme -maxdepth 1 -type f -iname "*splash*"))
-    if [[ $splashscreens ]]; then
-        echo $splashscreens
+    if [[ ! $(find $themes_path/$theme -maxdepth 1 -type f -iname "*splash*") ]]; then
+        echo "There are no splashscreens in ${theme^}. Can't install!"
     else
-        echo "hola"
-    fi
-    exit
-    for splashscreen in "${splashscreens[@]}"; do
-        if [[ -f "$splashscreen" ]]; then 
-            options+=("$i" "$(basename "$splashscreen")")
-            ((i++))
-        fi
-    done
-    local cmd=(dialog --backtitle "$backtitle" --menu "Choose an option for ${theme^} splashscreen" 15 50 06)
-    local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
-    case "$choice" in
-        *)
-            if [[ $((choice%2)) -eq 0 ]]; then
-                splashscreen="${options[$choice+1]}"
-            else
-                splashscreen="${options[$choice]}"
+        for splashscreen in "${splashscreens[@]}"; do
+            if [[ -f "$splashscreen" ]]; then
+                options+=("$i" "$(basename "$splashscreen")")
+                ((i++))
             fi
-            rm -f $splashscreens_path/*
-            cp $themes_path/$theme/$splashscreen $splashscreens_path
-            echo "$splashscreen installed successfully!"
-            ;; 
-    esac
+        done
+        local cmd=(dialog --backtitle "$backtitle" --menu "Choose an option for ${theme^} splashscreen" 15 50 06)
+        local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
+        case "$choice" in
+            *)
+                if [[ $((choice%2)) -eq 0 ]]; then
+                    splashscreen="${options[$choice+1]}"
+                else
+                    splashscreen="${options[$choice]}"
+                fi
+                    rm -f $splashscreens_path/*
+                    cp $themes_path/$theme/$splashscreen $splashscreens_path
+                    echo "$splashscreen installed successfully!"
+                ;;
+        esac
+    fi
 }
 
 function uninstall_splashscreen() {
@@ -214,7 +212,7 @@ function install_launching_images() {
                 copy_launching_images
                 echo "Launching images installed successfully!"
             else
-                dialog --backtitle "$backtitle" --msgbox "Something went wrong :_(\nCouldn't resolve https://github.com/$repo/es-runcommand-splash.git" 6 40 2>&1 >/dev/tty            
+                dialog --backtitle "$backtitle" --msgbox "Something went wrong :_(\nCouldn't resolve https://github.com/$repo/es-runcommand-splash.git" 6 40 2>&1 >/dev/tty
             fi
         fi
     fi
@@ -317,7 +315,7 @@ function try(){
 
     local themes=(
         "ehettervik pixel"
-        "lilbud material"
+        #~ "lilbud material"
     )
 
     while true; do
@@ -326,7 +324,7 @@ function try(){
         local options=()
         local status=()
         local i=1
-      
+
         for theme in "${themes[@]}"; do
             theme=($theme)
             theme="${theme[1]}"
@@ -345,10 +343,10 @@ function try(){
             fi
             ((i++))
         done
-        
+
         local cmd=(dialog --backtitle "$backtitle" --menu "Choose an option" 15 60 06)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
-        
+
         if [[ -n "$choice" && $choice > 0 ]]; then
             theme=(${themes[choice-1]})
             repo="${theme[0]}"
@@ -371,7 +369,7 @@ function try(){
                         local options=()
                         local status=()
                         local i=1
-                        
+
                         if [[ -d "$themes_path/$theme/retropie/icons" ]]; then
                             if [[ -d "$icons_path/$backup_default_icons_dir" && -d "$icons_path/$theme-icons" ]]; then
                                 status+=("i")
@@ -382,7 +380,7 @@ function try(){
                             fi
                             ((i++))
                         fi
-                        
+
                         if [[ $(find $themes_path/$theme -maxdepth 1 -type f -iname "*splash*") ]]; then
                             if [[ "$(ls -A $splashscreens_path)" ]]; then
                                 status+=("i")
@@ -393,7 +391,7 @@ function try(){
                             fi
                             ((i++))
                         fi
-    
+
                         if [[ $(curl "https://api.github.com/repos/$repo/es-runcommand-splash" 2>/dev/null | awk -F\" '/message/ {print $(NF-1)}') != "Not Found" ]]; then
                             if [[ -d "$themes_path/$theme/launching-images" ]]; then
                                 status+=("i")
@@ -403,7 +401,7 @@ function try(){
                                 options+=("$i" "Install ${theme^} launching images (not installed)")
                             fi
                         fi
-                        
+
                         cmd=(dialog --backtitle "$backtitle" --menu "Choose an option for ${theme^}" 15 75 06)
                         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
                         case "$choice" in
@@ -439,7 +437,7 @@ function try(){
                                     esac
                                 else
                                     install_splashscreen $repo $theme
-                                fi 
+                                fi
                                 ;;
                             3)
                                 if [[ "${status[choice-1]}" == "i" ]]; then
@@ -463,7 +461,7 @@ function try(){
                 esac
             else
                 install_theme $repo $theme
-            fi            
+            fi
         else
             break
         fi
