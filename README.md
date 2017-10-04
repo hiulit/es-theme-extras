@@ -64,7 +64,7 @@ e.g. `https://github.com/ehettervik/es-theme-pixel/retropie/icons`
 
 e.g. `https://github.com/ehettervik/es-theme-pixel/retropie/splashscreens`
 
-### Launching images URL
+#### Launching images URL
 
 `https://github.com/USERNAME/es-theme-THEME/retropie/launching-images`
 
@@ -90,7 +90,7 @@ e.g. `https://github.com/ehettervik/es-theme-pixel-icons`
 
 e.g. `https://github.com/ehettervik/es-theme-pixel-splashscreens`
 
-### Launching-images URL
+#### Launching images URL
 
 `https://github.com/USERNAME/es-theme-THEME-launching-images`
 
