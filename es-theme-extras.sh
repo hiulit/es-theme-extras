@@ -142,7 +142,7 @@ function install_splashscreen() {
     check_theme
     if [[ ! -d "$splashscreens_path" ]]; then
         mkdir -p $splashscreens_path
-        echo "Splashscreens folder created successfully!"
+        # echo "Splashscreens folder created successfully!"
     fi
     choose_splashscreen
 }
@@ -171,7 +171,7 @@ function choose_splashscreen() {
                 fi
                     rm -f $splashscreens_path/*
                     cp $themes_path/$theme/$splashscreen $splashscreens_path
-                    echo "$splashscreen installed successfully!"
+                    # echo "$splashscreen installed successfully!"
                 ;;
         esac
     fi
