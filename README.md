@@ -20,6 +20,7 @@ This scripts let's you install some extras for RetroPie themes. These extras are
 cd /home/pi/
 git clone https://github.com/hiulit/es-theme-extras.git
 cd es-theme-extras/
+sudo chmod +x es-theme-extras.sh
 sudo ./es-theme-extras.sh
 ```
 
