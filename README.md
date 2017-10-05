@@ -2,9 +2,9 @@
 
 This scripts let's you install some extras for RetroPie themes. These extras are:
 
-* Icons
-* Splashscreens
-* Launching images
+* [x] Icons
+* [x] Splashscreens
+* [x] Launching images
 
 ![Install Pixel](example-images/example-01.jpg "Install Pixel")
 ![Update or Uninstall Pixel](example-images/example-02.jpg "Update or Uninstall Pixel")
@@ -17,9 +17,10 @@ This scripts let's you install some extras for RetroPie themes. These extras are
 ## Installation
 
 ```
+cd /home/pi/
 git clone https://github.com/hiulit/es-theme-extras.git
 cd es-theme-extras/
-./es-theme-extras.sh
+sudo ./es-theme-extras.sh
 ```
 
 At this moment, [Pixel](https://github.com/ehettervik/es-theme-pixel) is the only theme that works with this script because it's the only one (that I know of) that has [icons](https://github.com/ehettervik/es-theme-pixel/tree/master/retropie/icons), splashscreens ([16:9](https://github.com/ehettervik/es-theme-pixel/blob/master/splash16-9.png) and [4:3](https://github.com/ehettervik/es-theme-pixel/blob/master/splash4-3.png)) and [launching images](https://github.com/ehettervik/es-runcommand-splash).
