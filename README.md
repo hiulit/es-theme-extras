@@ -1,6 +1,8 @@
 # Extras for RetroPie themes
 
-This scripts let's you install some extras for RetroPie themes. These extras are:
+> This is my first shell script, so there are surely code errors. [Contributing](#contributing) is most welcomed.
+
+This script let's you install some extras for RetroPie themes. These extras are:
 
 * [x] Icons
 * [x] Splashscreens
@@ -24,25 +26,27 @@ sudo chmod +x es-theme-extras.sh
 sudo ./es-theme-extras.sh
 ```
 
+## The big issue
+
 At this moment, [Pixel](https://github.com/ehettervik/es-theme-pixel) is the only theme that works with this script because it's the only one (that I know of) that has [icons](https://github.com/ehettervik/es-theme-pixel/tree/master/retropie/icons), splashscreens ([16:9](https://github.com/ehettervik/es-theme-pixel/blob/master/splash16-9.png) and [4:3](https://github.com/ehettervik/es-theme-pixel/blob/master/splash4-3.png)) and [launching images](https://github.com/ehettervik/es-runcommand-splash).
 
 Pixel theme has both icons and splashscreens in the same repository and launching images has its own repository.
 
 This script is created under these premises:
 
-* Icons and splashscreens must be in the same repository `https://github.com/USERNAME/es-theme-THEME`
-* Icons must be in path `/retropie/icons`
-* Splashscreens must be in the root path and named `splash16-9.png` and/or `splash4-3.png`
-* Launching images must be in another repository `https://github.com/USERNAME/es-runcommand-splash`
+* Icons and splashscreens must be in the same repository `https://github.com/USERNAME/es-theme-THEME`.
+* Icons must be in path `/retropie/icons`.
+* Splashscreens must be in the root path and named `splash16-9.png` and/or `splash4-3.png`.
+* Launching images must be in another repository `https://github.com/USERNAME/es-runcommand-splash`.
 
-I think that could be standarized so that every theme could take advantage of this script.
+I think that could be **standarized** so that every theme could take advantage of this script.
 
 ## Proposal for standarization
 
 I propose two versions:
 
-* [Self-contained](#self-contained-same-repository-version): All extras in the same repository
-* [Diferent repositories](#diferent-repositories-version) for each extra (icons, splashscreens and launching images)
+* [Self-contained](#self-contained-same-repository-version): All extras in the same repository.
+* [Diferent repositories](#diferent-repositories-version) for each extra (icons, splashscreens and launching images).
 
 When the decision is made, I'll make the necessary changes according to the version agreed upon.
 
@@ -52,25 +56,17 @@ When the decision is made, I'll make the necessary changes according to the vers
 
 `https://github.com/USERNAME/es-theme-THEME`
 
-e.g. `https://github.com/ehettervik/es-theme-pixel`
-
 #### Icons URL
 
 `https://github.com/USERNAME/es-theme-THEME/retropie/icons`
-
-e.g. `https://github.com/ehettervik/es-theme-pixel/retropie/icons`
 
 #### Splashscreens URL
 
 `https://github.com/USERNAME/es-theme-THEME/retropie/splashscreens`
 
-e.g. `https://github.com/ehettervik/es-theme-pixel/retropie/splashscreens`
-
 #### Launching images URL
 
 `https://github.com/USERNAME/es-theme-THEME/retropie/launching-images`
-
-e.g. `https://github.com/ehettervik/es-theme-pixel/retropie/launching-images`
 
 ### Diferent repositories version
 
@@ -78,25 +74,19 @@ e.g. `https://github.com/ehettervik/es-theme-pixel/retropie/launching-images`
 
 `https://github.com/USERNAME/es-theme-THEME`
 
-e.g. `https://github.com/ehettervik/es-theme-pixel`
-
 #### Icons URL
 
 `https://github.com/USERNAME/es-theme-THEME-icons`
-
-e.g. `https://github.com/ehettervik/es-theme-pixel-icons`
 
 #### Splashscreens URL
 
 `https://github.com/USERNAME/es-theme-THEME-splashscreens`
 
-e.g. `https://github.com/ehettervik/es-theme-pixel-splashscreens`
-
 #### Launching images URL
 
 `https://github.com/USERNAME/es-theme-THEME-launching-images`
 
-e.g. `https://github.com/ehettervik/es-theme-pixel-launching-images`
+Where **USERNAME** is your GitHub username and **THEME** is the theme's name.
 
 ## Filetype, naming convention and formatting
 
@@ -219,6 +209,10 @@ You can help make **es-theme-extras** better by [reporting issues](#issues) or [
 * Fork **es-theme-extras**: `git clone git@github.com:your-username/es-theme-extras.git`.
 * Create a **new branch** and make the desired changes there.
 * [Create a pull request](https://github.com/hiulit/es-theme-extras/pulls).
+
+## Authors
+
+Me 😛 [@hiulit](https://github.com/hiulit).
 
 ## Credits
 
