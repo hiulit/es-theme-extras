@@ -64,7 +64,7 @@ When the decision is made, I'll make the necessary changes according to the vers
 * **Splashscreens URL**: `https://github.com/USERNAME/es-theme-THEME-splashscreens`
 * **Launching images URL**: `https://github.com/USERNAME/es-theme-THEME-launching-images`
 
-Where **USERNAME** is your GitHub username and **THEME** is the theme's name.
+Where **USERNAME** is GitHub's username and **THEME** is the theme's name.
 
 ## Filetype, naming convention and formatting
 
