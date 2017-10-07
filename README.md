@@ -1,6 +1,6 @@
 # Extras for RetroPie themes
 
-> This is my first shell script, so there are surely code errors. [Contributing](#contributing) is most welcomed.
+> This is my first shell script ever, so there are surely code errors. [Contributing](#contributing) is most welcomed.
 
 This script let's you install some extras for RetroPie themes. These extras are:
 
