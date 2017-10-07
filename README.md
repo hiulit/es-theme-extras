@@ -52,39 +52,17 @@ When the decision is made, I'll make the necessary changes according to the vers
 
 ### Self-contained (same repository) version
 
-#### Theme URL
-
-`https://github.com/USERNAME/es-theme-THEME`
-
-#### Icons URL
-
-`https://github.com/USERNAME/es-theme-THEME/retropie/icons`
-
-#### Splashscreens URL
-
-`https://github.com/USERNAME/es-theme-THEME/retropie/splashscreens`
-
-#### Launching images URL
-
-`https://github.com/USERNAME/es-theme-THEME/retropie/launching-images`
+* **Theme URL**: `https://github.com/USERNAME/es-theme-THEME`
+* **Icons URL**: `https://github.com/USERNAME/es-theme-THEME/retropie/icons`
+* **Splashscreens URL**: `https://github.com/USERNAME/es-theme-THEME/retropie/splashscreens`
+* **Launching images URL**: `https://github.com/USERNAME/es-theme-THEME/retropie/launching-images`
 
 ### Diferent repositories version
 
-#### Theme URL
-
-`https://github.com/USERNAME/es-theme-THEME`
-
-#### Icons URL
-
-`https://github.com/USERNAME/es-theme-THEME-icons`
-
-#### Splashscreens URL
-
-`https://github.com/USERNAME/es-theme-THEME-splashscreens`
-
-#### Launching images URL
-
-`https://github.com/USERNAME/es-theme-THEME-launching-images`
+* **Theme URL**: `https://github.com/USERNAME/es-theme-THEME`
+* **Icons URL**: `https://github.com/USERNAME/es-theme-THEME-icons`
+* **Splashscreens URL**: `https://github.com/USERNAME/es-theme-THEME-splashscreens`
+* **Launching images URL**: `https://github.com/USERNAME/es-theme-THEME-launching-images`
 
 Where **USERNAME** is your GitHub username and **THEME** is the theme's name.
 
