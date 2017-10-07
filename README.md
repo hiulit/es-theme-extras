@@ -45,7 +45,7 @@ I think that could be **standarized** so that every theme could take advantage o
 
 I propose two versions:
 
-* [Self-contained](#self-contained-same-repository-version): All extras in the same repository.
+* [Self-contained](#self-contained-same-repository-version) (all extras in the same repository).
 * [Diferent repositories](#diferent-repositories-version) for each extra (icons, splashscreens and launching images).
 
 When the decision is made, I'll make the necessary changes according to the version agreed upon.
