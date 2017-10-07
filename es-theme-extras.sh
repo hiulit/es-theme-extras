@@ -311,7 +311,7 @@ function check_theme() {
     fi
 }
 
-function try(){
+function es_theme_extras(){
 
     local themes=(
         "ehettervik pixel"
@@ -468,5 +468,7 @@ function try(){
     done
 }
 
+es_theme_extras
+
 # Call arguments verbatim
-$@
+# $@
