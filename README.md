@@ -194,7 +194,7 @@ Me 😛 [@hiulit](https://github.com/hiulit).
 
 ## Credits
 
-Filetype, naming conventions and formatting taken (partially and revisited) from [ retropie-splashscreens-extra repository by HerbFargus](https://github.com/HerbFargus/retropie-splashscreens-extra/blob/master/README.md)
+Filetype, naming conventions and formatting taken (partially and revisited) from [retropie-splashscreens-extra repository by HerbFargus](https://github.com/HerbFargus/retropie-splashscreens-extra/blob/master/README.md)
 
 ## License
 
