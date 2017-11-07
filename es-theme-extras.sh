@@ -12,7 +12,7 @@ backup_default_icons_dir="backup-default-icons"
 splashscreens_path="/home/pi/RetroPie/splashscreens"
 launching_images_path="/opt/retropie/configs"
 
-backtitle="Backtitle"
+backtitle="Extras for RetroPie themes"
 
 function install_theme() {
     check_dependencies
@@ -142,7 +142,6 @@ function install_splashscreen() {
     check_theme
     if [[ ! -d "$splashscreens_path" ]]; then
         mkdir -p $splashscreens_path
-        # echo "Splashscreens folder created successfully!"
     fi
     choose_splashscreen
 }
@@ -171,7 +170,6 @@ function choose_splashscreen() {
                 fi
                     rm -f $splashscreens_path/*
                     cp $themes_path/$theme/$splashscreen $splashscreens_path
-                    # echo "$splashscreen installed successfully!"
                 ;;
         esac
     fi
@@ -291,7 +289,8 @@ function check_updates() {
     elif [[ $LOCAL == $BASE ]]; then
         output="needs to pull"
         status="needs-to-pull"
-        dialog --backtitle "$backtitle" --msgbox "$input $output" 6 40 2>&1 >/dev/tty
+	git pull
+        # dialog --backtitle "$backtitle" --msgbox "$input $output" 6 40 2>&1 >/dev/tty
     elif [[ $REMOTE == $BASE ]]; then
         output="needs to push"
         status="needs-to-push"
