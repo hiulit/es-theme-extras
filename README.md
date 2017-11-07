@@ -160,13 +160,13 @@ See https://github.com/ehettervik/es-runcommand-splash
 
 ## Changelog
 
-v0.1.1 (November 7th 2017)
+### v0.1.1 (November 7th 2017)
 
 * Fixed backtitle.
 * Removed comments.
 * Fixed `git pull` when theme needs an update.
 
-v0.1.0 (October 5th 2017)
+### v0.1.0 (October 5th 2017)
 
 * Initial commit
 
